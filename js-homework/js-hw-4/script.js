@@ -76,7 +76,7 @@
 
 //завдання два
 
-const login='nigga', age=44, stat='модератор'
+const login='nigga', age=14, stat='модератор'
 function checkAge(name, age, stat) {
     try {
         if (typeof name!= 'string' || typeof age!= 'number' || typeof stat!='string') throw Error;
@@ -85,11 +85,14 @@ function checkAge(name, age, stat) {
         throw 'good';
     }
     catch (ans) {
-        if (ans == Error) {return 'the field is empty! Please enter youre age'};
-        if (ans == RangeError) return 1;
-        if (ans == EvalError) return 2;
+        if (ans == Error) {alert('The field is empty! Please enter your age')};
+        if (ans == RangeError) {
+            if (age < 18) alert('You are too young!');
+            else alert('you are too old!')
+        };
+        if (ans == EvalError) alert('you have no acces');
         if (ans == 'good') return 'You have acces';
     }
 }
 
-console.log(checkAge(login, age, stat))
+checkAge(login, age, stat)
