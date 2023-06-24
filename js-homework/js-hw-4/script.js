@@ -76,7 +76,7 @@
 
 //завдання два
 
-const login='nigga', age=14, stat='модератор'
+const login='nigga', age=44, stat='модератор'
 function checkAge(name, age, stat) {
     try {
         if (typeof name!= 'string' || typeof age!= 'number' || typeof stat!='string') throw Error;
