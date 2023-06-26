@@ -59,31 +59,46 @@
 //         if (thisYear - this.year >= 1 && thisYear - this.year <= 6) return(thisYear - this.year + ' course');
 //         else return('You are not in Univercity')
 //     }
-        
+
 // }
 // const student = new Student('Roman', 'Hryhorchuk', 'Vasylovuch', 2022)
 // student.showFullName()
 
 //задання чотири
 
-class Marker{
-    constructor(color, amount, print) {
-        this.color = color;
-        this.amount = amount;
-        this.text = print;
-    }
-    print() {
-        return (this.text + ' is ' + this.color);
-    }
-    write() {
-        let arr = this.text;
-        arr =[...arr];
-        if (this.amount >= 0 && this.amount <= 100) {
-            for (let i = 0; i < arr.length * 2; i++){
-                if (arr[i] == ' ') arr[i].splice(i, 1);
-            }
-        }
-    }
-}
-const marker = new Marker('red', 10, 'hello world')
-console.log(marker.print())
+// class Marker {
+//     constructor(color, amount, print) {
+//         this.color = color;
+//         this.amount = amount;
+//         this.text = print;
+//         this.am_of_sym = amount * 2;
+//     }
+//     getColor() {
+//         return (this.text + ' is ' + this.color);
+//     }
+//     print() {
+//         const am_of_spaces = (this.text.match(' ') || 0);
+//         if ((this.am_of_sym + am_of_spaces) >= this.text.length ){
+//             console.log(this.text);
+//             this.amount -= (this.text.length - am_of_spaces) / 2;
+//             return
+//         }
+//         let buff = '';
+//             for (let i = 0; i < this.am_of_sym; i++) {
+//                 if (this.text[i] === ' ') {
+//                     this.am_of_sym++;
+//                     buff += this.text[i];
+//                     continue;
+//                 }
+//                 buff += this.text[i];
+//                 this.amount -= 0.5;
+//             }
+//         this.text = buff;
+//         console.log(this.text);
+//     }
+//     fill_it(amount){
+//         amount += ((this.amount + amount) <= 100) ? this.amount + amount : 100;
+//     }
+// }
+// const marker = new Marker('red', 8, 'hello world')
+// marker.print()
