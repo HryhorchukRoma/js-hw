@@ -22,7 +22,7 @@
 //     hp: 100,
 //     armor: 200
 // }
-
+    
 // function propsCount(user) {
 //     return Object.keys(user).length;
 // }

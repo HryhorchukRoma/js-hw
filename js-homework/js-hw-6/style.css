@@ -1,0 +1,21 @@
+body{
+    display:flex;
+    flex-direction: column;
+    width: 154px;
+}
+.window{
+    opacity: 0;
+}
+.active__window{
+    opacity: 100;
+    height: 100px;
+    width: 150px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.res{
+    display: flex;
+    flex-direction: column;
+}
