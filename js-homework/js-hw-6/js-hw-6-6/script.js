@@ -7,10 +7,24 @@ const field = document.querySelector("#outprice");
 const img = document.querySelectorAll(".shoe");
 const newtxt = document.querySelector(".new");
 const notnewtxt = document.querySelector(".notnew");
+const background = document.querySelectorAll(".gradient");
+
 let count = 0;
 
-color.forEach((item) => {
+color.forEach((item, index) => {
   item.addEventListener("click", () => {
+    background.forEach((item) => {
+      if(item.classList.value == "gradient second") {
+        item.classList.remove("second")
+      }
+    })
+    background[index].classList.add("second")
+    img.forEach((item) => {
+      if(item.classList.value == "shoe show") {
+        item.classList.remove("show")
+      }
+    })
+    img[index].classList.add("show")
     color.forEach((check) => {
       if (check.classList.value == "color active") {
         check.classList.remove("active");
