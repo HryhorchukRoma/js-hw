@@ -71,27 +71,38 @@ body{
 }
 
 .second{
-    z-index: -1;
+    transition: .5s;
+    opacity: 1 !important;
 }
 
 .gradient[color="blue"]{
     background-image: linear-gradient(45deg, #0136af, #22abfa);
+    opacity: 0;
+    transition: .5s;
 }
 
 .gradient[color="red"]{
     background-image: linear-gradient(45deg, #d62926, #ee625f);
+    opacity: 0;
+    transition: .5s;
 }
 
 .gradient[color="green"]{
     background-image: linear-gradient(45deg, #11998e, #1ce669);
+    opacity: 0;
+    transition: .5s;
 }
 
 .gradient[color="orange"]{
     background-image: linear-gradient(45deg, #fc4a1a, #f7b733);
+    opacity: 0;
+    transition: .5s;
 }
 
 .gradient[color="black"]{
     background-image: linear-gradient(45deg, #111, #666);
+    opacity: 0;
+    transition: .5s;
 }
 
 .logo{
